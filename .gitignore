@@ -1,0 +1,20 @@
+# Operativsystem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.tmp
+
+# Midlertidige filer
+~$*
+*.bak
+
+# Hemmeligheter og lokale miljøfiler
+.env
+.env.*
+*.key
+*.pem

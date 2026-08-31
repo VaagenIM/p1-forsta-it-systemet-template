@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 650" role="img" aria-labelledby="title description">
+  <title id="title">Startmal for logisk topologi i IT-laben</title>
+  <desc id="description">Et klientnett bruker en standard gateway for å nå et servernett og en avtalt tjeneste. DHCP og DNS vises som separate tjenesteavhengigheter. Alle plassholdere skal erstattes.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="650" fill="#ffffff"/>
+  <text x="550" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#111827">Logisk topologi – IT-laben</text>
+  <g fill="#f0fdf4" stroke="#15803d" stroke-width="3">
+    <rect x="20" y="180" width="220" height="110" rx="10"/>
+    <rect x="300" y="180" width="220" height="110" rx="10"/>
+    <rect x="580" y="180" width="220" height="110" rx="10"/>
+    <rect x="860" y="180" width="220" height="110" rx="10"/>
+    <rect x="300" y="390" width="220" height="110" rx="10"/>
+    <rect x="580" y="390" width="220" height="110" rx="10"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#111827">
+    <text x="130" y="218">Klientnett</text>
+    <text x="130" y="245">VLAN &lt;ID&gt;</text>
+    <text x="130" y="272">&lt;nett/prefiks&gt;</text>
+    <text x="410" y="218">Standard gateway</text>
+    <text x="410" y="245">&lt;IP-adresse&gt;</text>
+    <text x="410" y="272">&lt;ruter-ID&gt;</text>
+    <text x="690" y="218">Servernett</text>
+    <text x="690" y="245">VLAN &lt;ID&gt;</text>
+    <text x="690" y="272">&lt;nett/prefiks&gt;</text>
+    <text x="970" y="218">&lt;tjenestenavn&gt;</text>
+    <text x="970" y="245">&lt;vertsnavn eller ID&gt;</text>
+    <text x="970" y="272">&lt;protokoll/port&gt;</text>
+    <text x="410" y="428">DHCP-tjeneste</text>
+    <text x="410" y="455">&lt;vertsnavn eller ID&gt;</text>
+    <text x="410" y="482">DHCPv4: UDP 67/68</text>
+    <text x="690" y="428">DNS-tjeneste</text>
+    <text x="690" y="455">&lt;vertsnavn eller ID&gt;</text>
+    <text x="690" y="482">UDP/TCP 53</text>
+  </g>
+  <g fill="none" stroke="#1f2937" stroke-width="4" marker-end="url(#arrow)">
+    <path d="M 240 235 H 300"/>
+    <path d="M 520 235 H 580"/>
+    <path d="M 800 235 H 860"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#374151">
+    <text x="270" y="142">bruker som</text>
+    <text x="270" y="158">standard gateway</text>
+    <text x="550" y="150">ruter trafikk til</text>
+    <text x="830" y="142">fører</text>
+    <text x="830" y="158">&lt;protokoll/port&gt; til</text>
+  </g>
+  <g fill="none" stroke="#1f2937" stroke-width="3" stroke-dasharray="9 7" marker-end="url(#arrow)">
+    <path d="M 85 290 V 445 H 300"/>
+    <path d="M 175 290 V 535 H 550 V 445 H 580"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#374151">
+    <text x="110" y="420">klienter får nettverksinnstillinger fra</text>
+    <text x="310" y="525">klienter slår opp navn hos</text>
+  </g>
+  <text x="550" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">Tegnforklaring: Heltrukken pil = trafikkvei | stiplet pil = tjenesteavhengighet | &lt;...&gt; = skal erstattes</text>
+  <text x="550" y="620" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">Bruk samme ID i diagrammet, komponentoversikten og systemoversikten.</text>
+</svg>

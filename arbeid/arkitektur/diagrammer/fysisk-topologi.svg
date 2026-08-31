@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title description">
+  <title id="title">Startmal for fysisk topologi i IT-laben</title>
+  <desc id="description">En klient er fysisk koblet til en UniFi Flex Mini-svitsj. Svitsjen er koblet til en UniFi Dream Router og en fysisk virtualiseringsvert. Alle komponenter og forbindelser har etikettmaler som skal erstattes.</desc>
+  <rect width="900" height="600" fill="#ffffff"/>
+  <text x="450" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#111827">Fysisk topologi – IT-laben</text>
+  <g fill="#eff6ff" stroke="#1d4ed8" stroke-width="3">
+    <rect x="20" y="180" width="200" height="105" rx="10"/>
+    <rect x="350" y="180" width="200" height="105" rx="10"/>
+    <rect x="680" y="180" width="200" height="105" rx="10"/>
+    <rect x="350" y="390" width="200" height="105" rx="10"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#111827">
+    <text x="120" y="225">&lt;klient-ID&gt;</text>
+    <text x="120" y="252">klient</text>
+    <text x="450" y="212">&lt;svitsj-ID&gt;</text>
+    <text x="450" y="239">UniFi Flex Mini</text>
+    <text x="450" y="266">svitsj</text>
+    <text x="780" y="212">&lt;ruter-ID&gt;</text>
+    <text x="780" y="239">UniFi Dream Router</text>
+    <text x="780" y="266">ruter</text>
+    <text x="450" y="422">&lt;server-ID&gt;</text>
+    <text x="450" y="449">fysisk server</text>
+    <text x="450" y="476">virtualiseringsvert</text>
+  </g>
+  <g fill="none" stroke="#1f2937" stroke-width="4">
+    <path d="M 220 232 H 350"/>
+    <path d="M 550 232 H 680"/>
+    <path d="M 450 285 V 390"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#374151">
+    <text x="285" y="130">Ethernet</text>
+    <text x="285" y="145">&lt;grensesnitt&gt; til &lt;port&gt;</text>
+    <text x="615" y="130">Ethernet</text>
+    <text x="615" y="145">&lt;port&gt; til &lt;port&gt;</text>
+    <text x="535" y="335">Ethernet</text>
+    <text x="535" y="350">&lt;port&gt; til &lt;grensesnitt&gt;</text>
+  </g>
+  <text x="450" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">Tegnforklaring: Heltrukken linje = fysisk Ethernet-forbindelse | &lt;...&gt; = skal erstattes</text>
+  <text x="450" y="578" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#374151">Bruk samme ID i diagrammet, komponentoversikten og systemoversikten.</text>
+</svg>

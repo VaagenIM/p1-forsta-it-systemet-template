@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" modified="2026-08-30T00:00:00.000Z" agent="ChatGPT" version="24.7.17">
+  <diagram id="logical" name="Logisk topologi">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Logisk topologi – IT-laben" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="50" width="400" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="clientnet" value="Klientnett&lt;br&gt;VLAN &lt;ID&gt;&lt;br&gt;&lt;nett/prefiks&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="190" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="gateway" value="Standard gateway&lt;br&gt;&lt;IP-adresse&gt;&lt;br&gt;&lt;ruter-ID&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="180" width="190" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="servernet" value="Servernett&lt;br&gt;VLAN &lt;ID&gt;&lt;br&gt;&lt;nett/prefiks&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="180" width="190" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="service" value="&lt;tjenestenavn&gt;&lt;br&gt;&lt;vertsnavn eller ID&gt;&lt;br&gt;&lt;protokoll/port&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="180" width="190" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="dhcp" value="DHCP-tjeneste&lt;br&gt;&lt;vertsnavn eller ID&gt;&lt;br&gt;DHCPv4: UDP 67/68" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="390" width="190" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="dns" value="DNS-tjeneste&lt;br&gt;&lt;vertsnavn eller ID&gt;&lt;br&gt;UDP/TCP 53" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="390" width="190" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" value="bruker som standard gateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;" edge="1" parent="1" source="clientnet" target="gateway">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" value="ruter trafikk til" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;" edge="1" parent="1" source="gateway" target="servernet">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" value="fører &lt;protokoll/port&gt; til" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;" edge="1" parent="1" source="servernet" target="service">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" value="klienter får nettverksinnstillinger fra" style="edgeStyle=orthogonalEdgeStyle;rounded=0;dashed=1;html=1;fontSize=11;" edge="1" parent="1" source="clientnet" target="dhcp">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" value="klienter slår opp navn hos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;dashed=1;html=1;fontSize=11;" edge="1" parent="1" source="clientnet" target="dns">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend" value="Tegnforklaring: Heltrukken pil = trafikkvei | stiplet pil = tjenesteavhengighet | &lt;...&gt; = skal erstattes" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="180" y="560" width="660" height="40" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
