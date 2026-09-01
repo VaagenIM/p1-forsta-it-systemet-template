@@ -1,25 +1,24 @@
-# Uke 36 – fysisk infrastruktur og kommunikasjon
+# Steg 1 – fysisk infrastruktur og kommunikasjon
 
-**Dato:** 31. august–4. september 2026  
-**Periodeplan:** [P1 – forstå IT-systemet](periodeplan.md)  
+**Arbeidsplan:** [Forstå IT-systemet](arbeidsplan.md)
 **Startside:** [Forstå IT-systemet](../README.md)
 **Dager:** [Mandag](#mandag) · [tirsdag](#tirsdag) · [onsdag](#onsdag) · [torsdag](#torsdag) · [fredag](#fredag)
 
 **Ukemål:** Identifisere fysiske komponenter, roller og forbindelser og forklare hvordan en klient kobles til nettverket.
 
-**Ressurser:** [NDLA-fagstoff for perioden](../ressurser/ndla-fagstoff.md) · [Programvare og verktøy](../ressurser/programvare.md) · [Nettverkskjeden](../ressurser/nettverkskjeden.md)
+**Ressurser:** [NDLA-fagstoff for perioden](../ressurser/ndla-fagstoff.md) · [Programvare og verktøy](../ressurser/programvare.md) · [Nettverksmodeller](../ressurser/nettverksmodeller.md)
 
 **Muntlig gjennomgang:** Du får vite hvilken stasjon og klient du skal bruke, hvilke deler av IT-laben som inngår, og hvilke systemnavn og nettverksverdier du kan dokumentere.
 
-**Før du begynner:** Kontroller at du har ditt eget elevrepo fra Classroom50, VS Code, Git og tilgang til diagrams.net.
+**Før du begynner:** Gjennomfør [startsjekken](../ressurser/programvare.md#startsjekk). Bruk støtteveien der før du går videre hvis noe mangler.
 
 ## Mandag
 
 **Dagens tema:** Datamaskinen og dokumentasjonsstrukturen. Du skal forstå hva klienten består av, og hvor arbeidet skal dokumenteres.
 
-**Dagens arbeid:** Åpne Classroom50-invitasjonen i Teams-kanalen, opprett ditt eget elevrepo og klon det med Git i terminalen. Åpne deretter repomappen i VS Code. Start med klienten og utstyret ved egen stasjon: PC, hovedkort, CPU, RAM, lagring, nettverkskort (NIC) og porter.
+**Dagens arbeid:** Åpne Classroom50-invitasjonen i Teams-kanalen, kontroller at elevrepoet er privat, og klon det med Git i terminalen. Åpne deretter mappen i VS Code. Skriv planen i delen `Min arbeidsprosess` i systemoversikten før du undersøker klienten og utstyret ved egen stasjon: PC, hovedkort, CPU, RAM, lagring, nettverkskort (NIC) og porter.
 
-**Arbeidskø:** Opprett elevrepoet, åpne det i VS Code, undersøk klienten, oppdater komponentoversikten og registrer endringen med `git commit`.
+**Arbeidskø:** Opprett det private elevrepoet, åpne det i VS Code, skriv planen, undersøk klienten, oppdater komponentoversikten og registrer endringen med `git commit`.
 
 **Dagens endring:** Du kan vise minst én dokumentert komponent i `arbeid/komponentoversikt.md` og den første registrerte Git-endringen.
 
@@ -79,7 +78,7 @@
 
 **Dagens endring:** Du kan vise hva du forbedret, den registrerte Git-endringen og at den finnes i elevrepoet på GitHub.
 
-**Neste steg:** I uke 37 følger du nettverkskjeden fra ARP til en avtalt tjeneste.
+**Neste steg:** I steg 2 skiller du nettverkskonfigurasjon fra kommunikasjon fram til en avtalt tjeneste.
 
 **Verktøy:** [Git i terminalen, GitHub Desktop og VS Code](../ressurser/git.md)
 
@@ -105,6 +104,7 @@ Kontroller: Hva skulle være gjort? Hva er gjort? Kan du vise det? Fungerer det?
 - [ ] MAC-adresse, IP-adresse, subnett og standard gateway er funnet og kort forklart.
 - [ ] Jeg kan skille MAC-adresse fra IP-adresse og forklare hva Ethernet gjør i det lokale nettet.
 - [ ] Delen `Min systemdokumentasjon` i `README.md` har en kort systembeskrivelse og et godkjent navn på startpunktet.
+- [ ] Delen `Min arbeidsprosess` i systemoversikten har en plan for undersøkelsen.
 - [ ] Git-historikken viser små, forklarte endringer.
 - [ ] Jeg kan skille filinnhold, lagret fil og registrert Git-endring.
 - [ ] Ukens endringer er sendt til GitHub og kan åpnes der.
@@ -113,4 +113,4 @@ Kontroller: Hva skulle være gjort? Hva er gjort? Kan du vise det? Fungerer det?
 
 Kontroller én komponent mot en ny observasjon eller kilde. Forbedre rollen, relasjonen eller merknaden i komponentoversikten, og oppdater diagrammet dersom funnet endrer den fysiske forbindelsen.
 
-**Neste steg:** Følge ARP -> IP/subnett -> standard gateway -> DHCP -> DNS -> tjeneste med veiledning.
+**Neste steg:** Bruke nettverksmodellene til å undersøke nettverkskonfigurasjon og kommunikasjon fram til en tjeneste med veiledning.

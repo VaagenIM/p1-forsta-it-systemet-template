@@ -54,7 +54,7 @@ Kilde: [`curl` manual](https://curl.se/docs/manpage.html).
 
 ## Dokumenter problemet og løsningen
 
-Hvis testen ikke gir forventet resultat, fortsetter du med [nettverkskjeden](nettverkskjeden.md) og [feilsøkingsmetoden](feilsoking.md). Før sluttresultatet i `arbeid/feilsoking.md`:
+Hvis testen ikke gir forventet resultat, fortsetter du med [feilsøkingsrekkefølgen i nettverksmodellene](nettverksmodeller.md#feilsøkingsrekkefølge) og [feilsøkingsmetoden](feilsoking.md). Før sluttresultatet i `arbeid/feilsoking.md`:
 
 - hvilke problemer eller feil oppsto
 - hva du undersøkte

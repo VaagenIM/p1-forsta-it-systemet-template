@@ -10,6 +10,6 @@ Arbeid systematisk når noe ikke virker:
 6. Test én relevant løsning eller hypotese om gangen.
 7. Dokumenter feilen og løsningen i [arbeidsfilen](../arbeid/feilsoking.md).
 
-Bruk [nettverkskjeden](nettverkskjeden.md) når problemet gjelder nettverk eller en nettverkstjeneste.
+Bruk [feilsøkingsrekkefølgen i nettverksmodellene](nettverksmodeller.md#feilsøkingsrekkefølge) når problemet gjelder nettverk eller en nettverkstjeneste.
 
 Les [feilsøkingsmetodikk på NDLA](https://ndla.no/r/teknologiforstaelse-im-ikm-vg1/feilsokingsmetodikk/ad89a52950) hvis du trenger et eksempel på framgangsmåten.

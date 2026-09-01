@@ -2,6 +2,20 @@
 
 Bruk verktøyet som arbeidssteget peker til. Les fagstoffet først, åpne deretter verktøyet og dokumenter bare opplysninger som er relevante for IT-laben.
 
+## Startsjekk
+
+Startsjekken brukes til å finne riktig støtte. Den vurderes ikke med karakter.
+
+- [ ] Jeg har åpnet mitt private elevrepo fra Classroom50.
+- [ ] Jeg kan finne elevrepoets mappe på datamaskinen.
+- [ ] Jeg kan åpne mappen i VS Code, redigere en Markdown-fil og lagre den.
+- [ ] Jeg kan åpne en terminal i elevrepoet og kjenne igjen ledeteksten.
+- [ ] Jeg kan kjøre `git status` og skille resultatet fra en feilmelding.
+- [ ] Jeg kan åpne diagrams.net og en eksisterende `.drawio`-fil.
+- [ ] Jeg vet hvilken klient og hvilke deler av IT-laben jeg har lov til å undersøke.
+
+Hvis ett punkt mangler, stopp ved det punktet og vis læreren hva du får til. Bruk den aktuelle delen nedenfor til modellering og veiledet øving. Gjennomfør deretter punktet på nytt før du går videre til dagens fagarbeid.
+
 ## VS Code og Markdown
 
 **Brukes til:** å lese planer, redigere arbeidsfiler, følge relative lenker og kontrollere hva som er endret.
@@ -62,7 +76,7 @@ Følg [Proxmox VE](proxmox-ve.md) for å finne ressursene og [Linux-konsoll](lin
 
 **Brukes til:** å åpne NDLA-fagstoff, offisiell dokumentasjon og en avtalt tjeneste i IT-laben.
 
-En nettside som åpnes, er bare belegg for at den aktuelle tjenestetesten lyktes. Bruk resultatene fra nettverkskjeden når du skal forklare hvorfor tjenesten er tilgjengelig.
+En nettside som åpnes, er bare belegg for at den aktuelle tjenestetesten lyktes. Bruk observasjonene fra [nettverksmodellene](nettverksmodeller.md) når du skal forklare hvorfor tjenesten er tilgjengelig.
 
 Følg [test en tjeneste](tjenestetest.md) når arbeidssteget ber deg kontrollere en avtalt tjeneste.
 

@@ -1,23 +1,22 @@
-# Uke 38 – virtualisering og systemhelhet
+# Steg 3 – virtualisering og systemhelhet
 
-**Dato:** 14.–18. september 2026  
-**Periodeplan:** [P1 – forstå IT-systemet](periodeplan.md)  
+**Arbeidsplan:** [Forstå IT-systemet](arbeidsplan.md)
 **Startside:** [Forstå IT-systemet](../README.md)
 **Dager:** [Mandag](#mandag) · [tirsdag](#tirsdag) · [onsdag](#onsdag) · [torsdag](#torsdag) · [fredag](#fredag)
 
-**Ukemål:** Bruke nettverkskjeden i kontrollert feilsøking, skille fysisk fra virtuell infrastruktur og forklare systemet som en sammenhengende arkitektur.
+**Ukemål:** Bruke feilsøkingsrekkefølgen i kontrollert feilsøking, skille fysisk fra virtuell infrastruktur og forklare systemet som en sammenhengende arkitektur.
 
 **Ressurser:** [NDLA-fagstoff for perioden](../ressurser/ndla-fagstoff.md) · [Nettverkskommandoer](../ressurser/nettverkskommandoer.md) · [Proxmox VE](../ressurser/proxmox-ve.md) · [Linux-konsoll](../ressurser/linux-konsoll.md) · [Feilsøkingsmetoden](../ressurser/feilsoking.md)
 
 **Muntlig gjennomgang:** Du får vite hvilken Proxmox-node, virtuell maskin og tjeneste du skal undersøke, hvordan du får lesetilgang, og hvilke opplysninger du kan dokumentere.
 
-**Før du begynner:** Kontroller at du kan åpne Proxmox VE med lesetilgang, og at fysisk og logisk topologi fra uke 36–37 er tilgjengelig.
+**Før du begynner:** Kontroller at du kan åpne Proxmox VE med lesetilgang, og at fysisk og logisk topologi fra steg 1–2 er tilgjengelig. Bruk [startsjekken](../ressurser/programvare.md#startsjekk) hvis et grunnverktøy stopper deg.
 
 ## Mandag
 
-**Dagens tema:** Selvstendig, kontrollert feilsøking. Du skal bruke nettverkskjeden til å velge test uten en ferdig oppskrift.
+**Dagens tema:** Selvstendig, kontrollert feilsøking. Du skal bruke feilsøkingsrekkefølgen til å velge test uten en ferdig oppskrift.
 
-**Dagens arbeid:** Bruk Ethernet/MAC -> ARP -> IP/subnett -> standard gateway -> DHCP -> DNS -> tjeneste til å avgrense et avtalt problem. Dokumenter hva som oppsto, hvordan det ble løst og hvordan løsningen ble kontrollert.
+**Dagens arbeid:** Undersøk fysisk forbindelse → nettverksgrensesnitt → IP-konfigurasjon → lokalt nett → gateway og ruting → DNS → tjeneste etter behov for å avgrense et avtalt problem. Dokumenter hva som oppsto, hvordan det ble løst og hvordan løsningen ble kontrollert.
 
 **Arbeidskø:** Beskriv problemet, velg startpunkt i kjeden, test én hypotese om gangen, gjennomfør avtalt løsning, og kontroller samme funksjon på nytt.
 
@@ -59,9 +58,9 @@
 
 **Dagens tema:** Avhengigheter og systemarkitektur. Du skal forstå hvordan flere dokumenterte deler blir én sammenhengende modell.
 
-**Dagens arbeid:** Bygg sammen den fysiske, logiske og virtuelle modellen. Finn hva som er avhengig av hva.
+**Dagens arbeid:** Bygg sammen den fysiske, logiske og virtuelle modellen. Finn hva som er avhengig av hva, og fullfør gjennomføring, vurdering og neste steg i delen `Min arbeidsprosess`.
 
-**Arbeidskø:** Sammenlign komponentoversikten og begge diagrammene, velg én tjeneste, følg den gjennom alle lagene, og oppdater systemoversikten med lenker til beleggene.
+**Arbeidskø:** Sammenlign komponentoversikten og begge diagrammene, velg én tjeneste, følg den gjennom alle lagene, oppdater systemoversikten med lenker til beleggene, og vurder hva som fortsatt er usikkert eller bør forbedres.
 
 **Dagens endring:** Du kan vise en sammenhengende og kontrollert avhengighetskjede i systemoversikten.
 
@@ -83,7 +82,7 @@ Eksempel:
 
 **Dagens endring:** Du kan vise hva fagfellekontrollen avdekket, hvilken forbedring du gjorde, og et ferdig elevrepo på GitHub.
 
-**Neste steg:** Lever det ferdige repoet som din individuelle systemforklaring, og ta med erfaringene videre til neste periode.
+**Neste steg:** Lever det ferdige elevrepoet som din individuelle systemforklaring, og ta med erfaringene videre til neste periode.
 
 **Verktøy:** [VS Code og Markdown](../ressurser/programvare.md#vs-code-og-markdown) · [Git i terminalen, GitHub Desktop og VS Code](../ressurser/git.md)
 
@@ -101,7 +100,7 @@ Hvis muntlig fagfellekontroll ikke passer, kan den samme kontrollen gjennomføre
 
 | Faglig spørsmål | Verktøy | Avgrenset elevhandling | Kontrollpunkt |
 |---|---|---|---|
-| Hvor i nettverkskjeden ligger problemet? | [Windows- eller Linux-kommandoer](../ressurser/nettverkskommandoer.md) og [avtalt tjenestetest](../ressurser/tjenestetest.md) | Velge neste test ut fra forrige resultat, løse problemet og dokumentere løsningen i `arbeid/feilsoking.md`. | Dokumentasjonen viser hva som oppsto, årsaken, løsningen og kontrollen. |
+| Hvor i feilsøkingsrekkefølgen ligger problemet? | [Windows- eller Linux-kommandoer](../ressurser/nettverkskommandoer.md) og [avtalt tjenestetest](../ressurser/tjenestetest.md) | Velge neste test ut fra forrige resultat, løse problemet og dokumentere løsningen i `arbeid/feilsoking.md`. | Dokumentasjonen viser hva som oppsto, årsaken, løsningen og kontrollen. |
 | Hvor kjører den virtuelle ressursen? | [Proxmox VE](../ressurser/proxmox-ve.md) | Logge inn, skille node fra VM eller container og finne status og tildelte ressurser. | Du kan peke ut fysisk vert, virtuell ressurs og sentrale ressurser uten å endre konfigurasjonen. |
 | Hvordan er den virtuelle ressursen koblet til nettverket? | Proxmox og nettverksdiagram | Finne relevant nettverkskobling og plassere den virtuelle ressursen i den fysiske og logiske modellen. | Samme navn og relasjoner brukes konsekvent i Proxmox-observasjon og diagram. |
 | Hvilke belegg støtter systemforklaringen? | VS Code, Markdown og relative lenker | Koble `arbeid/arkitektur/oversikt.md` til komponentoversikt, diagrammer og dokumenterte problemer og løsninger. | En medelev kan følge lenkene og kontrollere forklaringen. |
@@ -114,7 +113,8 @@ Kontroller: Hva skulle være gjort? Hva er gjort? Kan du vise det? Fungerer det?
 - [ ] `arbeid/arkitektur/oversikt.md` forklarer hele IT-labens avgrensning, hovedkomponenter og avhengigheter med egen stasjon som startpunkt.
 - [ ] Komponentoversikt, fysisk topologi og logisk topologi stemmer overens.
 - [ ] Samme ID-er brukes overalt, alle viktige relasjoner er merket, og ingen plassholdere eller spørsmålstegn står igjen i diagrammene.
-- [ ] Minst ett avgrenset problem er løst ved hjelp av nettverkskjeden og dokumentert i `arbeid/feilsoking.md`.
+- [ ] Minst ett avgrenset problem er løst ved hjelp av feilsøkingsrekkefølgen og dokumentert i `arbeid/feilsoking.md`.
+- [ ] `Min arbeidsprosess` viser hva jeg planla, gjennomførte, vurderte og vil gjøre videre.
 - [ ] En tjeneste kan følges fra klienten ved egen stasjon gjennom nettverket til VM, hypervisor og fysisk vert.
 - [ ] En medelev har gitt tilbakemelding, og ett valgt belegg er forbedret.
 - [ ] Repoet forklarer systemet med presis fagterminologi og konkrete belegg.
@@ -125,4 +125,4 @@ Kontroller: Hva skulle være gjort? Hva er gjort? Kan du vise det? Fungerer det?
 
 Velg én avhengighet i systemoversikten. Forbedre forklaringen slik at en annen elev kan følge den fra tjenesten til den fysiske verten og tilbake til klienten.
 
-**Neste steg:** Fordype virtualisering, tjenester, automatisering og gjenoppretting i P3.
+**Neste steg:** Nettverk, tjenester og feilsøking fra periodedesign P2 er innarbeidet i P1. Neste separate periode er P3, der du fordyper virtualisering, tjenester, automatisering og gjenoppretting.

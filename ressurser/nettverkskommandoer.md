@@ -77,4 +77,4 @@ Kilder: [`ip-address`](https://manpages.debian.org/stable/iproute2/ip-address.8.
 | Navnet blir slått opp | DNS-oppslaget gir en adresse | at tjenesten på adressen virker |
 | Tjenestetesten lykkes | den avtalte tjenesten svarer på valgt måte | at alle andre tjenester på verten virker |
 
-Fortsett med [IP og subnett](ip-og-subnett.md), [nettverkskjeden](nettverkskjeden.md) eller [tjenestetest](tjenestetest.md) ut fra spørsmålet du undersøker.
+Fortsett med [IP og subnett](ip-og-subnett.md), [nettverksmodellene](nettverksmodeller.md) eller [tjenestetest](tjenestetest.md) ut fra spørsmålet du undersøker.

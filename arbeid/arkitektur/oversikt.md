@@ -9,7 +9,31 @@ Systemgrensen er **hele IT-laben**. Begynn forklaringen ved egen stasjon og føl
 
 Den skal ikke kopiere hele komponentoversikten. Bruk lenker til detaljene.
 
-## 1. Beskriv systemet
+## 1. Min arbeidsprosess
+
+Oppdater denne delen mens du arbeider. Planen skal skrives før undersøkelsen. Resten fylles ut og forbedres underveis.
+
+### Plan
+
+- Hva skal jeg undersøke?
+- I hvilken rekkefølge vil jeg arbeide?
+- Hvilke observasjoner, tester og kilder trenger jeg?
+
+### Gjennomføring
+
+- Hva gjorde jeg?
+- Hva måtte jeg endre fra planen, og hvorfor?
+
+### Vurdering
+
+- Hva fungerer godt i dokumentasjonen?
+- Hva er fortsatt usikkert eller må kontrolleres?
+
+### Neste steg
+
+- Hva vil jeg undersøke eller forbedre videre?
+
+## 2. Beskriv systemet
 
 Beskriv kort:
 
@@ -17,13 +41,13 @@ Beskriv kort:
 - hva det brukes til
 - hvem som bruker det
 
-## 2. Avgrensning
+## 3. Avgrensning
 
 Regn hele den avtalte IT-laben som systemet. Ta med stasjonene, felles nettverksutstyr, aktuelle nett og VLAN, DHCP, DNS, avtalte tjenester, servere, hypervisorer og virtuelle maskiner.
 
 Beskriv kort hvor grensen mot skolens øvrige nettverk og tjenester går. Ikke dokumenter systemer du ikke har fått tilgang til eller beskjed om å undersøke.
 
-## 3. Fysisk infrastruktur
+## 4. Fysisk infrastruktur
 
 Beskriv kort de viktigste fysiske delene.
 
@@ -46,7 +70,7 @@ Rediger [fysisk topologi](diagrammer/fysisk-topologi.drawio), eksporter den som 
 
 Se også [komponentoversikten](../komponentoversikt.md) for detaljer.
 
-## 4. Logisk struktur
+## 5. Logisk struktur
 
 Beskriv hvordan systemet er organisert logisk.
 
@@ -61,17 +85,17 @@ Eksempler:
 - nettverkstjenester
 - virtuelle maskiner
 
-Forklar én forbindelse ved å følge:
+Forklar én forbindelse ved å skille nettverkskonfigurasjonen fra kommunikasjonen fram til tjenesten. Bruk denne kommunikasjonsmodellen når leddene er relevante:
 
-**Ethernet/MAC -> ARP -> IP/subnett -> standard gateway -> DHCP -> DNS -> tjeneste**
+**Ethernet og MAC-adresser → ARP i det lokale nettet → IP-adresse og prefiks → gateway og ruting → DNS ved navnebruk → tjeneste, protokoll og port**
 
-Bruk [nettverkskjeden](../../ressurser/nettverkskjeden.md), [IP og subnett](../../ressurser/ip-og-subnett.md) og [nettverkskommandoene](../../ressurser/nettverkskommandoer.md) som støtte.
+Bruk [nettverksmodellene](../../ressurser/nettverksmodeller.md), [IP og subnett](../../ressurser/ip-og-subnett.md) og [nettverkskommandoene](../../ressurser/nettverkskommandoer.md) som støtte.
 
 Rediger [logisk topologi](diagrammer/logisk-topologi.drawio), eksporter den som SVG og kontroller forhåndsvisningen:
 
 ![Logisk topologi](diagrammer/logisk-topologi.svg)
 
-## 5. Viktige relasjoner og avhengigheter
+## 6. Viktige relasjoner og avhengigheter
 
 Beskriv de viktigste sammenhengene.
 
@@ -87,7 +111,7 @@ tjeneste -> operativsystem -> VM -> hypervisor -> fysisk server
 
 Forklar hvorfor avhengighetene er viktige.
 
-## 6. Videre dokumentasjon
+## 7. Videre dokumentasjon
 
 - [Komponentoversikt](../komponentoversikt.md)
 - [Problemer og løsninger](../feilsoking.md)

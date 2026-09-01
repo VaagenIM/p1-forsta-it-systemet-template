@@ -12,12 +12,12 @@ Skriv norsk fagbegrep først. Oppgi engelsk originalbegrep og eventuell forkorte
 | vertsmaskin | host |
 | virtuell maskin | virtual machine, VM |
 | versjonskontroll | version control |
-| repo | repository |
+| elevrepo | student repository |
 | arkitekturbeslutning | architecture decision record, ADR |
 | fysisk topologi | physical topology |
 | logisk topologi | logical topology |
 
-I dette repoet brukes **arkitektur** om systemhelheten, **infrastruktur** om det tekniske grunnlaget og **topologi** om plassering og forbindelser i diagrammene.
+I dette elevrepoet brukes **arkitektur** om systemhelheten, **infrastruktur** om det tekniske grunnlaget og **topologi** om plassering og forbindelser i diagrammene.
 
 Bruk norske begreper eller en innarbeidet forkortelse konsekvent (har du brukt det en gang, bruker du det på samme måte neste gang). Behold kommandoer, filnavn og produktnavn uendret, for eksempel `git commit`, `README.md`, Proxmox VE og UniFi Network.
 
@@ -53,7 +53,9 @@ fix: rett feil IP-adresse i komponentoversikten
 
 ## Sikkerhet
 
-Ikke legg passord, API-nøkler, private nøkler, personopplysninger eller andre hemmeligheter i repoet.
+Elevrepoet skal være privat. Dokumenter bare systeminformasjon læreren har godkjent. Ikke legg passord, API-nøkler, private nøkler, personopplysninger eller andre hemmeligheter i elevrepoet.
+
+Ikke publiser interne adresser, identifikatorer eller opplysninger om infrastrukturen i et offentlig elevrepo. Hvis synligheten er feil eller uklar, stopper du og ber læreren kontrollere den før du dokumenterer systemet.
 
 ### Systemnavn og nettverksverdier
 

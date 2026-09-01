@@ -1,20 +1,20 @@
 # Git i terminalen, GitHub Desktop og VS Code
 
-Git registrerer endringer i repoet. Du lærer kommandoene i terminalen først. Når du forstår arbeidsflyten, kan du bruke GitHub Desktop eller kildekontrollvisningen i VS Code som grafisk støtte.
+Git registrerer endringer i elevrepoet. Du lærer kommandoene i terminalen først. Når du forstår arbeidsflyten, kan du bruke GitHub Desktop eller kildekontrollvisningen i VS Code som grafisk støtte.
 
 ## Første gang
 
 1. Åpne Classroom50-invitasjonen i Teams-kanalen og opprett ditt elevrepo.
 2. Åpne elevrepoet på GitHub og kopier adressen fra **Code**.
-3. Åpne terminalen i mappen der du vil lagre repoet.
-4. Klon repoet og gå inn i mappen:
+3. Åpne terminalen i mappen der du vil lagre elevrepoet.
+4. Klon elevrepoet og gå inn i mappen:
 
 ```bash
 git clone <adresse-til-elevrepo>
 cd <navn-på-repomappen>
 ```
 
-5. Kontroller at du er i riktig repo:
+5. Kontroller at du er i riktig elevrepo:
 
 ```bash
 git status
@@ -76,7 +76,7 @@ Når du kan terminalflyten, kan du gjøre den samme arbeidsflyten i GitHub Deskt
 6. Velg **Push origin** for å sende registreringen til GitHub.
 7. Åpne elevrepoet på GitHub og kontroller at endringen vises.
 
-Hvis repoet ikke allerede finnes lokalt, kan du velge **File -> Clone Repository**, finne elevrepoet eller lime inn adressen under **URL**, velge lokal mappe og trykke **Clone**.
+Hvis elevrepoet ikke allerede finnes lokalt, kan du velge **File -> Clone Repository**, finne elevrepoet eller lime inn adressen under **URL**, velge lokal mappe og trykke **Clone**.
 
 | GitHub Desktop | Tilsvarende terminalsteg |
 |---|---|
@@ -101,6 +101,6 @@ Hjelp: [Git-dokumentasjon](https://git-scm.com/docs), [kom i gang med GitHub Des
 ## Hvis noe ikke virker
 
 - **`not a git repository`:** Gå til mappen som inneholder `README.md`, og kjør `git status` på nytt.
-- **Ingen endringer vises:** Kontroller at filen er lagret, og at du redigerer filen i riktig repo.
+- **Ingen endringer vises:** Kontroller at filen er lagret, og at du redigerer filen i riktig elevrepo.
 - **`nothing to commit`:** Det er ingen nye valgte endringer. Kjør `git status` og `git diff`.
 - **Pålogging eller sending mislykkes:** Kontroller GitHub-kontoen og vis feilmeldingen til læreren uten å dele passord eller tilgangstegn.

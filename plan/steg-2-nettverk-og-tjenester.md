@@ -1,17 +1,16 @@
-# Uke 37 – fra Ethernet til tjeneste
+# Steg 2 – fra Ethernet til tjeneste
 
-**Dato:** 7.–11. september 2026  
-**Periodeplan:** [P1 – forstå IT-systemet](periodeplan.md)  
+**Arbeidsplan:** [Forstå IT-systemet](arbeidsplan.md)
 **Startside:** [Forstå IT-systemet](../README.md)
 **Dager:** [Mandag](#mandag) · [tirsdag](#tirsdag) · [onsdag](#onsdag) · [torsdag](#torsdag) · [fredag](#fredag)
 
-**Ukemål:** Følge hele nettverkskjeden og bruke den i en veiledet feilsøking av et avgrenset problem.
+**Ukemål:** Skille nettverkskonfigurasjon fra kommunikasjon fram til en tjeneste og bruke feilsøkingsrekkefølgen i et avgrenset problem.
 
-**Ressurser:** [NDLA-fagstoff for perioden](../ressurser/ndla-fagstoff.md) · [Programvare og verktøy](../ressurser/programvare.md) · [Nettverkskjeden](../ressurser/nettverkskjeden.md) · [Feilsøkingsmetoden](../ressurser/feilsoking.md)
+**Ressurser:** [NDLA-fagstoff for perioden](../ressurser/ndla-fagstoff.md) · [Programvare og verktøy](../ressurser/programvare.md) · [Nettverksmodeller](../ressurser/nettverksmodeller.md) · [Feilsøkingsmetoden](../ressurser/feilsoking.md)
 
 **Muntlig gjennomgang:** Du får de godkjente testmålene, tjenesten du skal følge, nødvendig informasjon om nett og VLAN og det avgrensede feilscenarioet.
 
-**Før du begynner:** Kontroller at ukens endringer fra uke 36 finnes på GitHub, og at du kan åpne terminalen på den avtalte klienten.
+**Før du begynner:** Kontroller at endringene fra steg 1 finnes på GitHub. Gjenta terminalpunktene i [startsjekken](../ressurser/programvare.md#startsjekk) hvis du er usikker.
 
 ## Mandag
 
@@ -79,7 +78,7 @@
 
 **Dagens endring:** Du kan vise et dokumentert problem med årsak, løsning og kontroll i `arbeid/feilsoking.md`.
 
-**Neste steg:** I uke 38 bruker du arbeidsmåten mer selvstendig og kobler tjenesten til virtuell og fysisk infrastruktur.
+**Neste steg:** I steg 3 bruker du arbeidsmåten mer selvstendig og kobler tjenesten til virtuell og fysisk infrastruktur.
 
 **Fagstoff og verktøy:** [Feilsøking på nettverk og maskin – NDLA Vg1](https://ndla.no/nb/r/teknologiforstaelse-im-ikm-vg1/feilsoking-pa-nettverk-og-maskin/c1b1b6defb) · [feilsøkingsmetodikk – NDLA Vg1](https://ndla.no/r/teknologiforstaelse-im-ikm-vg1/feilsokingsmetodikk/ad89a52950) · [nettverkskommandoer](../ressurser/nettverkskommandoer.md) · [tjenestetest](../ressurser/tjenestetest.md)
 
@@ -98,7 +97,8 @@
 
 Kontroller: Hva skulle være gjort? Hva er gjort? Kan du vise det? Fungerer det? Er det dokumentert? Hva må forbedres? Hva er neste steg?
 
-- [ ] Jeg kan forklare hvert ledd i Ethernet/MAC -> ARP -> IP/subnett -> standard gateway -> DHCP -> DNS -> tjeneste.
+- [ ] Jeg kan forklare hvordan DHCP gir klienten IP-adresse, prefiks, standard gateway og DNS-server.
+- [ ] Jeg kan følge kommunikasjon gjennom relevante ledd fra det lokale nettet til en avtalt tjeneste.
 - [ ] `arbeid/arkitektur/diagrammer/logisk-topologi.drawio` følger forbindelsen fra egen stasjon til de delte nettverkene og tjenestene i IT-laben.
 - [ ] Nettverk, gateway, DHCP, DNS og avtalt tjeneste har korrekte etiketter etter diagramstandarden.
 - [ ] Avhengigheter til ARP, DHCP, DNS, standard gateway og tjeneste er forklart med observerte verdier.
